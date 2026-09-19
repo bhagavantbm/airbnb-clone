@@ -1,0 +1,260 @@
+
+.section-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+/* Large image on top */
+.section-gallery .main-photo {
+  grid-column: 1 / -1;
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Two small images below */
+.section-gallery .small-photo {
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Sections */
+.photo-section {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  gap: 35px;
+  margin-bottom: 65px;
+  align-items: start;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .photo-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-gallery .main-photo {
+    aspect-ratio: 1.5 / 1;
+  }
+
+  .section-gallery .small-photo {
+    aspect-ratio: 1.5 / 1;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.photo-tour-page {
+  min-height: 100vh;
+  background: #fff;
+  color: #222;
+}
+
+/* Header */
+.photo-tour-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 76px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-tour-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.back-button {
+  position: absolute;
+  left: 30px;
+  border: none;
+  background: none;
+  font-size: 38px;
+  font-weight: 300;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.header-actions {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  gap: 22px;
+}
+
+.header-actions button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Content */
+.photo-tour-content {
+  width: 1120px;
+  max-width: 90%;
+  margin: 100px auto 50px;
+}
+
+/* Section */
+.photo-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  margin-bottom: 70px;
+  align-items: start;
+}
+
+.section-info {
+  padding-top: 0;
+  padding-right: 20px;
+}
+
+.section-info h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  letter-spacing: -0.8px;
+}
+
+.section-info p {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #717171;
+  margin: 0;
+}
+
+/* Right-side gallery */
+.section-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+/* Large image */
+.main-photo {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Small images */
+.small-photo {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* One image sections */
+.section-gallery:has(.main-photo:only-child) .main-photo {
+  height: 330px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .photo-tour-content {
+    max-width: 92%;
+    margin-top: 40px;
+  }
+
+  .photo-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .section-info {
+    padding-right: 0;
+  }
+
+  .section-info h1 {
+    font-size: 28px;
+  }
+
+  .section-info p {
+    font-size: 15px;
+  }
+
+  .main-photo {
+    height: 260px;
+  }
+
+  .small-photo {
+    height: 130px;
+  }
+
+  .back-button {
+    left: 15px;
+  }
+
+  .header-actions {
+    right: 15px;
+  }
+}
+
+.section-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.main-photo {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.small-photo {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.photo-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  margin-bottom: 70px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .photo-section {
+    grid-template-columns: 1fr;
+  }
+
+  .main-photo {
+    height: 260px;
+  }
+
+  .small-photo {
+    height: 130px;
+  }
+}
