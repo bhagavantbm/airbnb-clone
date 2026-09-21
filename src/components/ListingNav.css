@@ -1,0 +1,150 @@
+/* =================================
+   STICKY LISTING NAVIGATION
+================================= */
+
+.listing-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 88px;
+
+  padding: 14px 8%;
+  background: #ffffff;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+/* NAVIGATION LINKS */
+
+.listing-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.listing-nav-links a {
+  position: relative;
+
+  padding: 18px 0;
+
+  color: #222222;
+  font-size: 17px;
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+.listing-nav-links a:first-child::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+  background: #222222;
+}
+
+/* RIGHT SIDE */
+
+.listing-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 15px;
+  color: #222222;
+}
+
+.nav-price strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-price span {
+  font-size: 14px;
+}
+
+.nav-price small {
+  width: 100%;
+  text-align: right;
+
+  margin-top: 4px;
+
+  font-size: 14px;
+}
+
+/* RESERVE BUTTON */
+
+.nav-reserve-button {
+  border: none;
+  border-radius: 25px;
+
+  padding: 15px 27px;
+
+  background: #e91e63;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.nav-reserve-button:hover {
+  background: #d41459;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .listing-nav {
+    padding: 12px 30px;
+  }
+
+  .listing-nav-links {
+    gap: 20px;
+  }
+
+  .listing-nav-right {
+    gap: 15px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .listing-nav {
+    min-height: 65px;
+    padding: 10px 16px;
+  }
+
+  .listing-nav-links {
+    gap: 16px;
+    overflow-x: auto;
+  }
+
+  .listing-nav-links a {
+    padding: 12px 0;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .listing-nav-right {
+    display: none;
+  }
+}

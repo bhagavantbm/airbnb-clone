@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./PhotoTour.css";
 import { propertyData } from "../data/propertyData";
@@ -12,44 +11,44 @@ const sections = [
   {
     title: "Living room 2",
     amenities: "Ceiling fan · Hot tub",
-    images: propertyData.images.slice(1, 4),
+    images: propertyData.images.slice(3, 6),
   },
   {
     title: "Full kitchen",
     amenities:
       "Freezer · Fridge · Blender · Cooker · Cooking basics · Kettle · Microwave · Toaster · Wine glasses",
-    images: propertyData.images.slice(0, 3),
+    images: propertyData.images.slice(6, 9),
   },
   {
     title: "Bedroom",
     amenities:
       "Double bed · Air conditioning · Bed linen · Ceiling fan · Clothes storage · Hangers · Iron · Wifi",
-    images: propertyData.images.slice(2, 5),
+    images: propertyData.images.slice(9, 12),
   },
   {
     title: "Full bathroom",
     amenities: "Hairdryer · Hot water · Shampoo · Shower gel",
-    images: propertyData.images.slice(1, 3),
+    images: propertyData.images.slice(12, 15),
   },
   {
     title: "Gym",
     amenities: "Air conditioning · Exercise equipment · Ceiling fan",
-    images: propertyData.images.slice(0, 3),
+    images: propertyData.images.slice(15, 18),
   },
   {
     title: "Exterior",
     amenities: "Outdoor space · Garden · Parking",
-    images: propertyData.images.slice(2, 5),
+    images: propertyData.images.slice(18, 21),
   },
   {
     title: "Pool",
     amenities: "Pool · Outdoor relaxation",
-    images: propertyData.images.slice(0, 3),
+    images: propertyData.images.slice(21, 24),
   },
   {
     title: "Additional photos",
     amenities: "",
-    images: propertyData.images,
+    images: propertyData.images.slice(24, 27),
   },
 ];
 

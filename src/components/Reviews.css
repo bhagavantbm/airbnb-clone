@@ -1,0 +1,135 @@
+.reviews-section {
+  width: min(1200px, calc(100% - 40px));
+  margin: 60px auto 0;
+  padding: 40px 0;
+  border-top: 1px solid #dddddd;
+}
+
+.reviews-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.reviews-heading h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.reviews-rating {
+  font-size: 16px;
+  margin: 0;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 80px;
+  row-gap: 60px;
+}
+
+.review-card {
+  min-width: 0;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.letter-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7eadb;
+  color: #b7791f;
+  font-size: 20px;
+}
+
+.review-user h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.review-user p {
+  margin: 0;
+  color: #717171;
+  font-size: 14px;
+}
+
+.review-date {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.review-date span {
+  font-weight: 400;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.show-more-review {
+  display: block;
+  margin-top: 10px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.all-reviews-button {
+  margin-top: 40px;
+  padding: 14px 22px;
+  border: 1px solid #222222;
+  border-radius: 10px;
+  background: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.all-reviews-button:hover {
+  background: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .reviews-section {
+    width: calc(100% - 32px);
+    margin-top: 40px;
+    padding: 30px 0;
+  }
+
+  .reviews-heading {
+    display: block;
+  }
+
+  .reviews-heading h2 {
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

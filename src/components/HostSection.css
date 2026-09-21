@@ -1,0 +1,160 @@
+.host-section {
+  max-width: 1200px;
+  margin: 70px auto 0;
+  padding: 0 24px 60px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.host-section > h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.host-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 80px;
+}
+
+.host-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 28px;
+  border: 1px solid #dddddd;
+  border-radius: 22px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.host-profile {
+  text-align: center;
+}
+
+.host-logo {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #104f3d;
+  color: white;
+  font-size: 13px;
+}
+
+.host-profile h3 {
+  margin: 4px 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.host-profile p {
+  margin-top: 12px;
+}
+
+.host-stats {
+  border-left: 1px solid #dddddd;
+  padding-left: 25px;
+}
+
+.host-stats div {
+  padding: 12px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.host-stats div:last-child {
+  border-bottom: none;
+}
+
+.host-stats strong,
+.host-stats span {
+  display: block;
+}
+
+.host-stats strong {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.host-stats span {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.host-info {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.host-right h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 25px;
+}
+
+.co-hosts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px 35px;
+  margin-bottom: 35px;
+}
+
+.co-host {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.co-host img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.host-right p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.message-host-button {
+  margin-top: 20px;
+  padding: 16px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f1f1;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .host-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .co-hosts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .host-card {
+    padding: 25px 15px;
+  }
+
+  .host-profile h3 {
+    font-size: 22px;
+  }
+
+  .host-stats {
+    padding-left: 15px;
+  }
+
+  .co-hosts {
+    grid-template-columns: 1fr;
+  }
+}

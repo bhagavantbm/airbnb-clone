@@ -1,0 +1,184 @@
+
+.discount-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  margin-bottom: 28px;
+  font-size: 16px;
+}
+
+.discount-card span {
+  font-size: 25px;
+}
+
+.discount-card div {
+  flex: 1;
+}
+
+.discount-card p {
+  margin: 0;
+}
+
+.discount-card button {
+  border: none;
+  background: #f7f7f7;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* BOOKING CARD */
+
+.booking-card {
+  background: white;
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.price {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.price span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* INPUTS */
+
+.booking-inputs {
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.date-box {
+  padding: 14px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.date-box:first-child {
+  border-right: 1px solid #aaaaaa;
+}
+
+.date-box label,
+.guests-box label {
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+}
+
+.date-box p,
+.guests-box p {
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+.guests-box {
+  grid-column: span 2;
+  padding: 14px;
+  position: relative;
+}
+
+.guests-box span {
+  position: absolute;
+  right: 18px;
+  top: 28px;
+  font-size: 22px;
+}
+
+/* CANCELLATION */
+
+.cancellation {
+  background: #f7f7f7;
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px 5px;
+  margin: 18px 0;
+  color: #717171;
+  font-size: 14px;
+}
+
+.cancellation strong {
+  color: #222222;
+}
+
+/* RESERVE BUTTON */
+
+.reserve-button {
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  padding: 17px;
+  background: #e7195a;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reserve-button:hover {
+  background: #c9144d;
+}
+
+.charge-text {
+  text-align: center;
+  color: #717171;
+  margin-top: 22px;
+}
+
+.report-listing {
+  text-align: center;
+  color: #717171;
+  margin-top: 28px;
+}
+
+/* BOTTOM TOAST MESSAGE */
+
+.reserve-message {
+  position: fixed;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222222;
+  color: white;
+  padding: 17px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 9999;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  animation: messageSlideUp 0.3s ease;
+}
+
+@keyframes messageSlideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .booking-card {
+    padding: 20px;
+  }
+
+  .discount-card {
+    padding: 16px;
+  }
+}
